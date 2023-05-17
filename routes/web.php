@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ClientLogoController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProgressBarController;
 use App\Http\Controllers\ProImgController;
 use App\Http\Controllers\SliderImageController;
 use App\Http\Controllers\StartedController;
@@ -46,9 +47,19 @@ Route::middleware([
 
     Route::get('/post', [WorkPostController::class, 'index'])->name('post');
     Route::post('/post/create', [WorkPostController::class, 'create'])->name('post.create');
+    Route::get('/post/list', [WorkPostController::class, 'store'])->name('post.list');
+    Route::get('/post/delete/{id}', [WorkPostController::class, 'delete'])->name('post.delete');
+
 
     Route::get('/Client', [ClientLogoController::class, 'index'])->name('client');
     Route::post('/Client/add', [ClientLogoController::class, 'create'])->name('client.add');
+
+    Route::get('/progress-bar', [ProgressBarController::class, 'index'])->name('progressBar');
+    Route::post('/progress-bar/add', [ProgressBarController::class, 'create'])->name('progressBar.infoadd');
+    Route::get('/progress-bar/list', [ProgressBarController::class, 'store'])->name('progressBar.list');
+    Route::get('/progress-bar/delete/{id}', [ProgressBarController::class, 'delete'])->name('progressBar.delete');
+
+
 
 
 

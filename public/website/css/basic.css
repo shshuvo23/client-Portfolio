@@ -327,6 +327,38 @@ h1 {
 	line-height: 56px;
 }
 
+.ad{
+    color:#434d5c;
+}
+
+.progress-container {
+    width: 700px; /* Adjust width */
+    height: 20px; /* Optional: adjust height */
+    background-color: #f2f2f2; /* Optional: change background color */
+    border-radius: 5px; /* Optional: round corners */
+    overflow: hidden;
+}
+
+.progress {
+    
+    align-items: center;
+  }
+
+.progress-bar {
+    height: 100%;
+    background-color: #FFCC99; /* Optional: change progress bar color */
+    text-align: center;
+    color: black;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    display: block;
+    color: white; /* Optional: change text color */
+    font-size: 12px; /* Optional: adjust font size */
+    line-height: 20px; /* Optional: center text vertically */
+}
+
 .namep{
 	/* font-family: 'Nanum Gothic', sans-serif; */
     font-family: 'Butler', sans-serif;
@@ -338,6 +370,9 @@ h1 {
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 27px;
 	color: #292929;
+}
+.heading{
+    font-size: 2opx;
 }
 
 @media (max-width: 1079px) {

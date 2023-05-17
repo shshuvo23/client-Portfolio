@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Client;
+use App\Models\Progressbar;
 use App\Models\ProImage;
 use App\Models\SlideImage;
 use App\Models\WorksPost;
@@ -31,12 +32,14 @@ class HomeController extends Controller
         $categories = Category::orderBy('id', 'desc')->take(6)->get();
         $posts = $postsQuery->orderBy('id', 'desc')->take(8)->get();
         $clients = Client::all();
+        $progressBars = Progressbar::all();
         return view('website.home.index', [
             'lastImage' => $lastImage,
             'lastSlide' => $lastSlide,
             'categories' => $categories,
             'posts' => $posts,
             'clients' => $clients,
+            'progressBars' => $progressBars,
         ]);
     }
 

@@ -30,6 +30,12 @@ class WorksPost extends Model
         self::$workPost->save();
     }
 
+    public static function deletePost($id)
+    {
+        self::$workPost = WorksPost::find($id);
+        self::$workPost->delete();
+    }
+
     public function category(){
         return $this->belongsTo(Category::class);
     }

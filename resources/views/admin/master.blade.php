@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apez Admin Template | Dashboard</title>
     <link rel="icon" type="{{ asset('/') }}admin/image/x-icon" href="{{ asset('/') }}admin/images/">
+
+    <link rel="stylesheet" href="{{ asset('/') }}website/css/fontawesome-free-6.4.0-web/css/all.min.css">
     <!-- Switcher CSS -->
     <link rel="stylesheet" href="{{ asset('/') }}admin/assets/plugin/switchery/switchery.min.css" />
     <!-- Morris CSS -->
@@ -43,62 +45,43 @@
                     <ul>
                         <li class="menu-title">Dashboard</li>
                         <li>
-                            <a href="{{route('dashboard')}}"><i class="icon-wallet"></i><span>Dashboard</span></a>
+                            <a href="{{route('dashboard')}}"><i class="fa-solid fa-circle-plus"></i><span>Dashboard</span></a>
                         </li>
 
                         <li class="menu-title">Slide  Image</li>
                         <li>
-                            <a href="{{route('Slider.addImage')}}"><i class="icon-wallet"></i><span>Add Slider Image</span></a>
+                            <a href="{{route('Slider.addImage')}}"><i class="fa-solid fa-circle-plus"></i><span>Add Slider Image</span></a>
                         </li>
 
                         <li class="menu-title">Profile Image</li>
                         <li>
-                            <a href="{{route('pro.addImage')}}"><i class="icon-wallet"></i><span>Add Profile Image</span></a>
+                            <a href="{{route('pro.addImage')}}"><i class="fa-solid fa-circle-plus"></i><span>Add Profile Image</span></a>
                         </li>
 
                         <li class="menu-title">Category</li>
                         <li>
-                            <a href="{{route('category')}}"><i class="icon-wallet"></i><span>Add Category</span></a>
+                            <a href="{{route('category')}}"><i class="fa-solid fa-circle-plus"></i><span>Add Category</span></a>
                         </li>
+
                         <li class="menu-title">Post</li>
                         <li>
-                            <a href="{{route('post')}}"><i class="icon-wallet"></i><span>Add Post</span></a>
+                            <a href="{{route('post')}}"><i class="fa-solid fa-circle-plus"></i><span>Add Post</span></a>
                         </li>
+                        <li>
+                            <a href="{{route('post.list')}}"><i class="fa-solid fa-table"></i><span>Post List</span></a>
+                        </li>
+
                         <li class="menu-title">Our Client</li>
                         <li>
-                            <a href="{{route('client')}}"><i class="icon-wallet"></i><span>Add Client Logo</span></a>
+                            <a href="{{route('client')}}"><i class="fa-solid fa-circle-plus"></i><span>Add Client Logo</span></a>
                         </li>
 
-
-                        <li class="has-sub">
-                            <a><i class="icon-compass"></i><span>Menu Level</span><i class="arrow"></i></a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a><span>Second Level</span></a>
-                                </li>
-                                <li class="has-sub">
-                                    <a><span>Second Level Child</span><i class="arrow"></i></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a><span>Third Level</span></a>
-                                        </li>
-                                        <li>
-                                            <a><span>Third Level</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="has-sub">
-                                    <a><span>Second Level Child</span><i class="arrow"></i></a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a><span>Third Level</span></a>
-                                        </li>
-                                        <li>
-                                            <a><span>Third Level</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <li class="menu-title">Progress Bar </li>
+                        <li>
+                            <a href="{{route('progressBar')}}"><i class="fa-solid fa-circle-plus"></i><span>Add ProgressBar Info</span></a>
+                        </li>
+                        <li>
+                            <a href="{{route('progressBar.list')}}"><i class="fa-solid fa-table"></i><span>ProgressBar List</span></a>
                         </li>
                     </ul>
                 </div>
@@ -110,10 +93,10 @@
                         <!-- Logo Container -->
                         <div id="logo">
                             <div class="tbl-cell logo-icon">
-                                <a href="#"><img src="images/icon.png" alt=""></a>
+                                <a href="#"><img src="{{ asset('/') }}website/images/favicons/sign-png-Foysalsstudio.png" alt=""></a>
                             </div>
                             <div class="tbl-cell logo">
-                                <a href="#"><img src="images/logo.png"></a>
+                                <a href="#"><img src="{{ asset('/') }}website/images/favicons/sign-png-Foysalsstudio.png"><span style="color: white">FOYSAL"S STUDIO</span></a>
                             </div>
                         </div>
                     </div>
@@ -480,9 +463,9 @@
             </div>
         </div><!-- End Sidebar Section -->
          <!-- Page Footer -->
-         <div class="page-ftr">
+         {{-- <div class="page-ftr">
             <div>© 2018. Cryptoboard Admin Template by ManasaTheme</div>
-        </div>
+        </div> --}}
     </div>
 
 

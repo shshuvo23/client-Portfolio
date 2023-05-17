@@ -21,36 +21,28 @@
     <!-- Page Body -->
     <div class="page-body">
         <div class="row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <div class="dashboard-stat color-success">
                     <div class="content">
-                        <h4>523</h4> <span>Users</span>
+                        <h4>{{ $userCount }}</h4> <span>Users</span>
                     </div>
                     <div class="icon"><i class="icon-people"></i></div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <div class="dashboard-stat color-warning">
                     <div class="content">
-                        <h4>111</h4> <span>Projects</span>
+                        <h4>{{ $postCount }}</h4> <span>Posts</span>
                     </div>
-                    <div class="icon"><i class="icon-layers"></i></div>
+                    <div class="icon"><i class="fa-solid fa-signs-post"></i></div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-4">
                 <div class="dashboard-stat color-primary">
                     <div class="content">
-                        <h4>$12K</h4> <span>Income</span>
+                        <h4>{{ $clientCount }}</h4> <span>Client</span>
                     </div>
-                    <div class="icon"><i class="icon-docs"></i></div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="dashboard-stat color-danger">
-                    <div class="content">
-                        <h4>$523</h4> <span>Expenses</span>
-                    </div>
-                    <div class="icon"><i class="icon-credit-card"></i></div>
+                    <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
                 </div>
             </div>
         </div>

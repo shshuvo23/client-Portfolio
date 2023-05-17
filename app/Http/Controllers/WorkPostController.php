@@ -19,6 +19,17 @@ class WorkPostController extends Controller
     public function create(Request $request)
     {
         WorksPost::addPost($request);
-        return redirect('/post');
+        return redirect('/post/list');
+    }
+
+    public function store()
+    {
+        return view('admin.post.postList', ['posts' => WorksPost::orderBy('id', 'desc')->get()]);
+    }
+
+    public function delete($id)
+    {
+        WorksPost::deletePost($id);
+        return redirect('/post/list');
     }
 }

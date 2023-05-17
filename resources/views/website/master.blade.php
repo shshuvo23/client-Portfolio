@@ -24,6 +24,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> --}}
     <!-- CSS -->
     {{-- <link rel="stylesheet" href="{{ asset('/') }}website/css/fontawesome-free-6.4.0-web/css/fontawesome.css">
     <link rel="stylesheet" href="{{ asset('/') }}website/css/fontawesome-free-6.4.0-web/css/fontawesome.min.css"> --}}
@@ -108,13 +109,14 @@
             <!-- Footer -->
             <footer class="align-center">
                 <div class="socials">
-                    <a target="blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a target="blank" href="https://github.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a target="blank" href="https://twitter.com/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a target="blank" href="https://www.youtube.com/"><i class="fa-brands fa-dribbble"></i></a>
+                    <a target="blank" href="https://www.facebook.com/sadimahmudfoysalovi?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a target="blank" href="https://instagram.com/sadimahmudfoysal?igshid=OTk0YzhjMDVlZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a target="blank" href="https://www.linkedin.com/in/sadimahmudfoysalovi"><i class="fa-brands fa-linkedin"></i></a>
+                    <a target="blank" href="https://dribbble.com/SadiFoysal"><i class="fa-brands fa-dribbble"></i></a>
                     <a target="blank" href="https://www.behance.net/sadimahmudfoysalovi"><i class="fa-brands fa-behance"></i></a>
+                    <a target="blank" href=""><i class="fa-brands fa-flickr"></i></a>
                 </div>
-                <div class="copy">© 2023 <a target="blank" href="https://github.com/shshuvo23">@shshuvo</a>. all
+                <div class="copy">© 2023 <a target="blank" href="https://github.com/shshuvo23">@shshuvo</a> <a href="https://www.facebook.com/profile.php?id=100006838690187">For contact</a>. all
                     rights reserved.</div>
             </footer>
 
